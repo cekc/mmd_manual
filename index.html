@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/26e58688d6.js" crossorigin="anonymous"></script>
+    <title>MMD Manual</title>
+</head>
+<body>
+    <!--grid container-->
+    <grid-container>
+        <!--header-->
+        <header>
+            <h1 class="white_font">MMD Manualen</h1>
+            <menu-div><nav><i class="fa-solid fa-bars white_font"></nav></i></menu-div>
+        </header>
+        <aside>
+
+        </aside>
+        <main>
+
+        </main>
+        <footer>
+
+            <p id="demo">Fetch a file to change this text.</p>
+            
+            <script>
+
+                let file = "fetch_info.txt"
+
+                fetch (file)
+                .then(x => x.text())
+                .then(y => document.getElementById("demo").innerHTML = y);
+
+            </script>
+
+        </footer>
+    </grid-container>
+</body>
+</html>
