@@ -1,7 +1,8 @@
+@use 'partial'
 /*table of contents*/
 
 /*general*/
-*{
+* {
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
@@ -20,9 +21,7 @@ grid-container{
     gap: 1%;
 }
 /*semantic tags*/
-.demo{
-    color: white;
-}
+
 /*classes*/
 .white_font{
     color: white;
