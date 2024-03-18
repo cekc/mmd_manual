@@ -14,20 +14,19 @@
         <header>
             <h1 class="white_font">MMD Manualen</h1>
             <!--navigation-->
-            <menu-div>
-                <!--burger menu-->
-                <nav class="mobile-nav">
-                    <i class="bars fa-solid fa-bars white_font"></i>
-                </nav>
-                <!--desktop navigation-->
-                <nav class="desktop-nav">
-                    <a href="">Forside</a>
-                    <a href="">Samarbejde</a>
-                    <a href="">Analyse</a>
-                    <a href="">Design</a>
-                    <a href="">Programering</a> 
-                </nav>
-            </menu-div>
+            <!--burger menu-->
+            <nav class="mobile-nav">
+                <i class="navToggle bars fa-solid fa-bars white_font"></i>
+            </nav>
+            <!--desktop navigation-->
+            <nav class="desktop-nav">
+                <a class="active" href="">Forside</a><p>|</p>
+                <a href="">Samarbejde</a><p>|</p>
+                <a href="">Analyse</a><p>|</p>
+                <a href="">Design</a><p>|</p>
+                <a href="">Programmering</a><p>|</p>
+                <a href="">Indhold</a>
+            </nav>
         </header>
         <aside>
 
@@ -39,5 +38,13 @@
 
         </footer>
     </grid-container>
+    <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.desktop-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
 </body>
 </html>
