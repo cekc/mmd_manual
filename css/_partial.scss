@@ -1,8 +1,15 @@
-/*variabler*/
+/*table of contents*/
+/*1.variabler*/
 
 $primary-color: #fff;
 $secondary-color: #000;
 $tertiery-color: rgb(255, 136, 0);
 $quaternary-color: #f0f0f0;
+$primary-font: Monospace;
 
-/*mixin*/
+/*2.mixin*/
+@mixin flex($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="da">
+<!--SPROG-->
+<html lang="en">
 <head>
+    <!--META CHARSET-->
     <meta charset="UTF-8">
+    <!--META VIEWPORT-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!--META ROBOTS-->
+    <meta name=”robots” content="#">
+    <!--META DESCRIPTION-->
+    <meta name="description" content="#">
+    <!--META TITLE-->
+    <title>Forside | MMD Manual</title>
+    <!--IMPORT FONTE OG ICONS FONTAWESOME-->
     <script src="https://kit.fontawesome.com/26e58688d6.js" crossorigin="anonymous"></script>
-    <title>MMD Manual</title>
+    <!--IMPORT/LINK TIL STYLESHEET(S)--> 
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
     <!--grid container-->
     <grid-container>
         <!--header-->
         <header>
-            <h1 class="white_font">MMD Manualen</h1>
+            <h1 class="white_font">MMD Manualen | Forside</h1>
             <!--navigation-->
             <!--burger menu-->
             <nav class="mobile-nav">
@@ -20,14 +30,15 @@
             </nav>
             <!--desktop navigation-->
             <nav class="desktop-nav">
-                <a class="active" href="">Forside</a><p>|</p>
-                <a href="">Samarbejde</a><p>|</p>
+                <a class="active" href="#">Forside</a><p>|</p>
+                <a href="coop.html">Samarbejde</a><p>|</p>
                 <a href="">Analyse</a><p>|</p>
                 <a href="">Design</a><p>|</p>
                 <a href="">Programmering</a><p>|</p>
                 <a href="">Indhold</a>
             </nav>
         </header>
+        <!--aside indholdsfortegnelse-->
         <aside>
 
         </aside>
@@ -39,12 +50,6 @@
         </footer>
     </grid-container>
     <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
-    <script>
-        const navbarToggle = () => {
-        const nav = document.querySelector('.desktop-nav');
-        nav.classList.toggle('toggleShow');
-        }
-        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
-    </script>
+    <script src="javascript/burger_menu.js"></script>
 </body>
 </html>
