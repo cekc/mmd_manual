@@ -14,8 +14,14 @@
     <title>Samarbejde | MMD Manual</title>
     <!--IMPORT FONTE OG ICONS FONTAWESOME-->
     <script src="https://kit.fontawesome.com/26e58688d6.js" crossorigin="anonymous"></script>
-    <!--IMPORT/LINK TIL STYLESHEET(S)--> 
-    <link rel="stylesheet" href="css/style.css">  
+    <!--JAVASCRIPT TIL BURGER MENU TOGGLE-->
+    <script src="javascript/burger_menu.js"></script>
+    <!--JAVASCRIPT TIL IMAGE COMPARISON SLIIDER-->
+    <script src="javascript/image_comparison_slider.js"></script>
+    <!--LINK TIL STYLESHEET(S)--> 
+    <link rel="stylesheet" href="css/style.css">
+    <!--LINK TIL FAVICON (DET LILLE BILLEDE VED SIDEN AF TITLE)-->
+    <link rel="icon" type="image/x-icon" href=""> 
 </head>
 <body>
     <!--grid container-->
@@ -50,7 +56,7 @@
                 <p>Alt gruppearbejde kommer med en række udfordringer, men også med fordele hvis disse udfordringer håndteres på en hensigtsmæssig måde.</p>
                 <ul>
                     <li><p><b>Uenigheder:</b> generelt kan man sige, jo flere personer i gruppen, jo flere til at byde ind, jo mere tid går der med diskussioner. </p></li>
-                    <li><p><b>Politik:</b> En anden udforing ved gruppe arbejde er at folk vil typisk være enige med dem de kan lide, og ikke nødvendigvis de ideer de syntes er bedst.</p></li>
+                    <li><p><b>Politik:</b> En anden udfordring ved gruppe arbejde er at folk vil typisk være enige med dem de kan lide, og ikke nødvendigvis de ideer de syntes er bedst.</p></li>
                     <li><p><b>Kommunikation:</b> Jo flere personer, jo flere kompromiser. Det endelige resultat kan blive noget rodet og uden en rød tråd.</p></li>
                     <li><p><b>Freeriders:</b> Nogle vil måske se store grupper som en mulighed for at gå lidt under radaren, og undlade at bidrage.</p></li>
                     <li><p><b>Ekskluderet:</b> I større grupper vil nogle føle deres ideer bliver overhørt/ -trumfet, som så kan betyde at de trækker sig fra diskussionerne.</p></li>
@@ -60,7 +66,20 @@
                 <ul>
                     <li><p><b>2-mands gruppe:</b> Her kan udfordringerne være at man ikke kan nå til enighed om en beslutning. Til gengæld vil diskussioner sjældent trække i langdrag.</p></li>
                     <li><p><b>3-mands gruppe:</b> Den idelle gruppe størrelse efter min mening. Ulige antal betyder at uenigheder kan løses hurtigt og demokratisk. Man er for få til at nogen går under radaren</p></li>
+                    <li><p><b>4-mands gruppe</b>...</p></li>
+                    <li><p><b>5-mands gruppe</b>...</p></li>
                 </ul>
+                <h3>Gruppe roller</h3>
+                <!--IMAGE COMPARISON SLIDER HTML/CSS OG JAVASCRIPT HENTET FRA W3SCHOOLS-->
+                <div class="img-comp-container">
+                    <div class="img-comp-img">
+                      <img src="img/img_teamroller_positiv.svg" width="960" height="760">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="img/img_teamroller_negativ.svg" width="960" height="760">
+                    </div>
+                </div>
+                <!--IMAGE COMPARISON SLIDER SLUT-->
             </section>
 
         </main>
@@ -68,7 +87,9 @@
 
         </footer>
     </grid-container>
-    <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
-    <script src="javascript/burger_menu.js"></script>
+    <script>
+        initComparisons();
+        console.log('hej');
+    </script>
 </body>
 </html>

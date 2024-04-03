@@ -7,20 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(255, 136, 0);
-}
-
-grid-container {
-  display: grid;
-  grid-template-areas: "header header" "aside main" "footer footer";
-  grid-template-rows: auto auto 10vw;
-  grid-template-columns: 20vw 80vw;
-  grid-row-gap: 0.5vw;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
 h1, h2, h3, p {
   font-family: Monospace;
 }
@@ -51,17 +37,32 @@ li {
   list-style-type: none;
 }
 
-/*general classes*/
+/*3.1.general classes*/
 .white_font {
   color: #fff;
 }
 
-/*header*/
+/*4.body*/
+body {
+  background-color: rgb(255, 136, 0);
+}
+
+grid-container {
+  display: grid;
+  grid-template-areas: "header header" "aside main" "footer footer";
+  grid-template-rows: auto auto 10vw;
+  grid-template-columns: 20vw 80vw;
+  grid-row-gap: 0.5vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*4.1.header*/
 header {
   grid-area: header;
   max-width: 100vw;
   min-height: 35vw;
-  background-image: url(../img/header_banner.jpg);
+  background-image: url(../img/img_header_banner.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   display: flex;
@@ -128,13 +129,13 @@ nav p {
   text-transform: uppercase;
 }
 
-/*aside*/
+/*4.2.aside*/
 aside {
   grid-area: aside;
   background-color: #000;
 }
 
-/*main*/
+/*4.3.main*/
 main {
   grid-area: main;
   background-color: #fff;
@@ -160,13 +161,44 @@ section *:last-child {
   flex-direction: column;
 }
 
-/*footer*/
+/*image comparison slider css start*/
+.img-comp-container {
+  position: relative;
+  height: 760px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+/*image comparison slider slut*/
+/*4.4.footer*/
 footer {
   grid-area: footer;
   background-color: #000;
 }
 
-/*mobil*/
+/*5.mobil*/
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
