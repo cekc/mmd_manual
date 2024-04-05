@@ -15,7 +15,7 @@ function initComparisons() {
       /* Set the width of the img element to 50%: */
       img.style.width = (w / 2) + "px";
       /* Create slider: */
-      slider = document.createElement("DIV");
+      slider = document.createElement("div");
       slider.setAttribute("class", "img-comp-slider");
       /* Insert slider */
       img.parentElement.insertBefore(slider, img);

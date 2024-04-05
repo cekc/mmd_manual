@@ -133,7 +133,7 @@ main {
     background-color: partial.$primary-color;
 }
 section{
-    padding: 5vw 0;
+    padding: 5vw 0 0 0;
     h2, h3, p{
         padding: 2vw 8vw;
     }
@@ -148,20 +148,31 @@ section{
     @include partial.flex();
     flex-direction: column;
 }
+.sec-img-slider{
+    @include partial.flex();
+    flex-direction: column;
+    h3{
+        text-align: center;
+    }
+    >div{
+        width: 90%;
+        height: auto;
+    }
+}
 /*image comparison slider css start*/
 .img-comp-container {
     position: relative;
-    height: 760px; /*should be the same height as the images*/
+    height: 60vw; /*should be the same height as the images*/
 }
 .img-comp-img {
     position: absolute;
-    width: auto;
-    height: auto;
+    width: 75vw; 
+    height: 57vw;
     overflow: hidden;
 }
 .img-comp-img img {
     display: block;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 }
 .img-comp-slider {
     position: absolute;
@@ -170,12 +181,11 @@ section{
     /*set the appearance of the slider:*/
     width: 40px;
     height: 40px;
-    background-color: #2196F3;
-    opacity: 0.7;
-    border-radius: 50%;
+    background-color: partial.$secondary-color;
+    opacity: 0.6;
+    transform: rotate(45deg);
 }
 /*image comparison slider slut*/
-
 /*4.4.footer*/
 footer {
     grid-area: footer;

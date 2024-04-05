@@ -21,7 +21,7 @@
     <!--LINK TIL STYLESHEET(S)--> 
     <link rel="stylesheet" href="css/style.css">
     <!--LINK TIL FAVICON (DET LILLE BILLEDE VED SIDEN AF TITLE)-->
-    <link rel="icon" type="image/x-icon" href=""> 
+    <link rel="icon" type="image/x-icon" href="grafik/favicon.ico"> 
 </head>
 <body>
     <!--grid container-->
@@ -69,14 +69,20 @@
                     <li><p><b>4-mands gruppe</b>...</p></li>
                     <li><p><b>5-mands gruppe</b>...</p></li>
                 </ul>
+                
+            </section>
+            <section class="sec-img-slider">
                 <h3>Gruppe roller</h3>
+                <p>Mennesker har forskellige styrker og svagheder. Når en gruppe skal sammensættes, er det vigtigt at så mange af de nedunderstående karaktertræk er til stede som muligt.</p>
                 <!--IMAGE COMPARISON SLIDER HTML/CSS OG JAVASCRIPT HENTET FRA W3SCHOOLS-->
-                <div class="img-comp-container">
-                    <div class="img-comp-img">
-                      <img src="img/img_teamroller_positiv.svg" width="960" height="760">
-                    </div>
-                    <div class="img-comp-img img-comp-overlay">
-                      <img src="img/img_teamroller_negativ.svg" width="960" height="760">
+                <div>
+                    <div class="img-comp-container">
+                        <div class="img-comp-img">
+                        <img src="img/img_teamroller_negativ.svg" alt="teamrollers styrker">
+                        </div>
+                        <div class="img-comp-img img-comp-overlay">
+                        <img src="img/img_teamroller_positiv.svg" alt="teamrollers svagheder">
+                        </div>
                     </div>
                 </div>
                 <!--IMAGE COMPARISON SLIDER SLUT-->
@@ -89,7 +95,6 @@
     </grid-container>
     <script>
         initComparisons();
-        console.log('hej');
     </script>
 </body>
 </html>
